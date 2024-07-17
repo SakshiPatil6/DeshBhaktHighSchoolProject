@@ -108,7 +108,13 @@
             <li><a href="news.php">News</a></li>
             <li><a href="gallery.php">Gallery</a></li>
             <li><a href="about.php">About</a></li>
+<<<<<<< HEAD
  <li><a href="contact.php">Contact</a></li>
+=======
+
+            <!-- <li><a href="achievements.php">Achievements</a></li> -->
+            <li><a href="contact.php">Contact</a></li>
+>>>>>>> 6e9d5230119b9f129cfeb3aeecd5e3c2828a9cf2
           </ul>
 
           <a href="register.php" class="btn-book btn btn-secondary btn-sm menu-absolute">Enroll

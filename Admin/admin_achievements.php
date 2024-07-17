@@ -2,20 +2,23 @@
 @include 'config.php';
 $message = []; // Initialize message array
 
-if(isset($_POST['add_contact'])){
-   $location = mysqli_real_escape_string($link, $_POST['location']);
-   $openhours = mysqli_real_escape_string($link, $_POST['openhours']);
-   $email = mysqli_real_escape_string($link, $_POST['email']);
-   $call = mysqli_real_escape_string($link, $_POST['call']);
-   
-   $insert_query = mysqli_prepare($link, "INSERT INTO `contact`( `location`, `hours`, `email`, `contact`) VALUES (?,?,?,?)");
-   mysqli_stmt_bind_param($insert_query, "ssss", $location, $openhours, $email, $call);
+if(isset($_POST['add_achi'])){
+   $achi_heading = mysqli_real_escape_string($link, $_POST['achiHeading']);
+   $achi_date = mysqli_real_escape_string($link, $_POST['achiDate']);
+   $achi_desc = mysqli_real_escape_string($link, $_POST['achiDesc']);
+   $achi_image = $_FILES["achiImage"]['name'];
+   $achi_image_tmp_name = $_FILES['achiImage']['tmp_name'];
+   $achi_image_folder = 'image/achievements/'.$achi_image;
+
+   $insert_query = mysqli_prepare($link, "INSERT INTO `achievements`(`heading`, `date`, `description`, `image`) VALUES (?, ?, ?, ?)");
+   mysqli_stmt_bind_param($insert_query, "ssss", $achi_heading, $achi_date, $achi_desc, $achi_image);
    mysqli_stmt_execute($insert_query);
 
    if(mysqli_stmt_affected_rows($insert_query) > 0){
-      $message[] = 'Contact details added successfully';
+      move_uploaded_file($achi_image_tmp_name, $achi_image_folder);
+      $message[] = 'Achievements added successfully';
    }else{
-      $message[] = 'Could not add the Contact details';
+      $message[] = 'Could not add the achievements';
    }
 }
  
@@ -61,7 +64,7 @@ if(isset($message)){
             <nav class="navbar">
                     <a href="admin_gallery.php">Add Gallery</a>
                     <a href="admin_news.php">Add News</a>
-                   
+                    <a href="admin_achievements.php">Add Achievements</a>
                     <a href="admin_contact.php">Add Contacts</a>
                     <a href="admin_staff.php">Add Staff</a>
                     <a href="admin_feedback.php">Feedback</a>
@@ -69,22 +72,18 @@ if(isset($message)){
             </nav>
         </div>
     </header>
-
-
+      
     <div class="containeer">
         <section>
             <form action="" method="post" class="add-product-form" enctype="multipart/form-data">
-                    <h3>add a Contact</h3>
-                    <input type="text" name="location" placeholder="enter the location" class="box" required>
-                    <input type="text" name="openhours" placeholder="enter the open hours" class="box" required>
-                    <input type="email" name="email" placeholder="enter the email" class="box" required>
-                    <input type="number" name="call" placeholder="enter the phone number" class="box" required>                   
-                    <input type="submit" value="add the contact details" name="add_contact" class="btn">
+                    <h3>add achievements</h3>
+                    <input type="text" name="achiHeading" placeholder="enter the news heading" class="box" required>
+                    <input type="date" name="achiDate" placeholder="enter the date" class="box" required>
+                    <input type="text" name="achiDesc" placeholder="enter the description" class="box" required>
+                    <input type="file" name="achiImage" min="0" accept="image/png,image/jpg,image/jpeg" class="box" required>
+                    <input type="submit" value="add the news" name="add_achi" class="btn">
             </form>
         </section>
-        
-
-
-</div>   
+</div>    
 </body>
 </html>

@@ -40,6 +40,7 @@
 <body>
   
 
+
 <header class=header>
         <div class="flex">
             <a href="admin.php"class="logo">Desh Bhakt High School</a>
@@ -52,7 +53,6 @@
                     <a href="admin_feedback.php">Feedback</a>
 
                     <a href="../UI/index.php">Logout</a>
-
             </nav>
         </div>
     </header>
