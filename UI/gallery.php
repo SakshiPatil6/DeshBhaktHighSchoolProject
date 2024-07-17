@@ -130,10 +130,6 @@
             <li class="active"><a href="gallery.php">Gallery</a></li>
             <li><a href="about.php">About</a></li>
 
-<<<<<<< HEAD
-=======
-            <!-- <li><a href="achievements.php">Achievements</a></li> -->
->>>>>>> 6e9d5230119b9f129cfeb3aeecd5e3c2828a9cf2
             <li><a href="contact.php">Contact</a></li>
           </ul>
 
