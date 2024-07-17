@@ -174,7 +174,6 @@ if(mysqli_num_rows($select_contact) > 0){
             <li><a href="gallery.php">Gallery</a></li>
             <li class="active"><a href="about.php">About</a></li>
             
-            <li><a href="achievements.php">Achievements</a></li>
             <li><a href="contact.php">Contact</a></li>
           </ul>
 

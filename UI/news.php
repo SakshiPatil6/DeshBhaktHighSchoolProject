@@ -129,11 +129,11 @@ if(mysqli_num_rows($select_contact) > 0){
 
 
           <div class="col-6 col-lg-3 text-right">
-            <a href="login.html" class="small mr-3">
+            <a href="login.php" class="small mr-3">
               <span class="icon-lock"></span>
               Log In
             </a>
-            <a href="register.html" class="small">
+            <a href="register.php" class="small">
               <span class="icon-person"></span>
               Register
             </a>
@@ -154,8 +154,6 @@ if(mysqli_num_rows($select_contact) > 0){
             <li  class="active"><a href="news.php">News</a></li>
             <li><a href="gallery.php">Gallery</a></li>
             <li><a href="about.php">About</a></li>
-            
-            <li><a href="achievements.html">Achievements</a></li>
             <li><a href="contact.php">Contact</a></li>
           </ul>
 

@@ -130,7 +130,6 @@
             <li class="active"><a href="gallery.php">Gallery</a></li>
             <li><a href="about.php">About</a></li>
 
-            <li><a href="achievements.php">Achievements</a></li>
             <li><a href="contact.php">Contact</a></li>
           </ul>
 

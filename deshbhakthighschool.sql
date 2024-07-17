@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 16, 2024 at 06:44 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Generation Time: Jul 17, 2024 at 06:54 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -80,6 +80,13 @@ CREATE TABLE `feedback` (
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `feedback`
+--
+
+INSERT INTO `feedback` (`name`, `email`, `subject`, `message`, `id`) VALUES
+('Sakshi Balaso Patil', 'sakshipatil3830@gmail.com', 'Math complaint', 'Regarding teaching', 11);
+
 -- --------------------------------------------------------
 
 --
@@ -96,15 +103,24 @@ CREATE TABLE `gallery` (
 --
 
 INSERT INTO `gallery` (`id`, `image`) VALUES
-(3, 'IMG-20220615-WA0034.jpg'),
+(3, '20220626_094439.jpg'),
 (4, '20220626_094909.jpg'),
-(5, '20230108_135947.jpg'),
-(6, 'IMG-20220813-WA0130.jpg'),
-(7, '20221010_142342.jpg'),
-(8, '20230102_162542.jpg'),
-(9, '20230923_094410.jpg'),
-(10, '20221010_142342.jpg'),
-(11, '20220626_094439.jpg');
+(5, '20220627_182431.jpg'),
+(6, '20230102_162542.jpg'),
+(7, '20230108_135947.jpg'),
+(8, '20230112_111827.jpg'),
+(9, '20230126_093354.jpg'),
+(10, '20230128_083945.jpg'),
+(11, 'IMG-20220506-WA0057.jpg'),
+(12, 'IMG-20220615-WA0107.jpg'),
+(13, 'IMG-20220615-WA0034.jpg'),
+(14, 'IMG-20220805-WA0006.jpg'),
+(15, '20230923_094410.jpg'),
+(16, 'IMG-20220801-WA0082.jpg'),
+(17, 'IMG-20220813-WA0122.jpg'),
+(18, 'IMG-20220815-WA0087.jpg'),
+(19, 'IMG-20240413-WA0037.jpg'),
+(20, '20220626_093101.jpg');
 
 -- --------------------------------------------------------
 
@@ -219,9 +235,7 @@ INSERT INTO `teaching_staff` (`id`, `name`, `position`, `qualification`, `image_
 (20, 'SANJAY BHIMGONDA MUDDANNA', 'ASSISTANT TEACHER', '(M. A, B. Ed)', '../UI/images/TEACHING/1721074072_SANJAY BHIMGONDA MUDDANNA.JPG'),
 (21, 'SUJATA SUBHASH BHOSALE', 'ASSISTANT TEACHER', '(M. A, B. Ed)', '../UI/images/TEACHING/1721074107_SUJATA SUBHASH BHOSALE.JPG'),
 (22, 'SUNITA RAVINDRA MOTHE', 'ASSISTANT TEACHER', '(M. A, B. Ed)', '../UI/images/TEACHING/1721074140_SUNITA RAVINDRA MOTHE.JPG'),
-(24, 'SUNITA SANDEEP KALKHAMB', 'ASSISTANT TEACHER', '(M. A, B. Ed)', '../UI/images/TEACHING/1721074320_SUNITA SANDEEP KALKHAMB.JPG'),
-(25, 'TUSHAR TANAJI THITE', 'ASSISTANT TEACHER', '(M. A, B. Ed)', '../UI/images/TEACHING/1721104988_sk.jpg'),
-(26, 'TUSHAR THITE', 'ASSISTANT TEACHER', '(M. A, B. Ed)', '../UI/images/TEACHING/1721105022_IMG_9897.JPG');
+(24, 'SUNITA SANDEEP KALKHAMB', 'ASSISTANT TEACHER', '(M. A, B. Ed)', '../UI/images/TEACHING/1721074320_SUNITA SANDEEP KALKHAMB.JPG');
 
 --
 -- Indexes for dumped tables
@@ -295,13 +309,13 @@ ALTER TABLE `contact`
 -- AUTO_INCREMENT for table `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `gallery`
 --
 ALTER TABLE `gallery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `news`
@@ -310,22 +324,10 @@ ALTER TABLE `news`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT for table `non_teaching_staff`
---
-ALTER TABLE `non_teaching_staff`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
---
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT for table `teaching_staff`
---
-ALTER TABLE `teaching_staff`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

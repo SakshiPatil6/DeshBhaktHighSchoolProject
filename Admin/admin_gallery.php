@@ -59,8 +59,9 @@ if(!empty($message)){
             <nav class="navbar">
                     <a href="admin_gallery.php">Add Gallery</a>
                     <a href="admin_news.php">Add News</a>
-                    <a href="admin_achievements.php">Add Achievements</a>
+                   
                     <a href="admin_contact.php">Add Contacts</a>
+                    <a href="admin_staff.php">Add Staff</a>
                     <a href="admin_feedback.php">Feedback</a>
                     <a href="../UI/index.php">Logout</a>
             </nav>

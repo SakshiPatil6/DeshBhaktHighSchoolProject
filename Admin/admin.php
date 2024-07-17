@@ -24,6 +24,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="adminstyle.css">
     
+    
 </head>
 <body>
   
@@ -31,11 +32,11 @@
 
     <header class=header>
         <div class="flex">
-            <a href="admin.php"class="logo">Desh Bhakt High School</a>
+            <a href="admin.php" class="logo">Desh Bhakt High School</a>
             <nav class="navbar">
                     <a href="admin_gallery.php">Add Gallery</a>
                     <a href="admin_news.php">Add News</a>
-                    <a href="admin_achievements.php">Add Achievements</a>
+                   
                     <a href="admin_contact.php">Add Contacts</a>
                     <a href="admin_staff.php">Add Staff</a>
                     <a href="admin_feedback.php">Feedback</a>

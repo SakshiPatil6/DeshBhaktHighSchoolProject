@@ -108,9 +108,7 @@
             <li><a href="news.php">News</a></li>
             <li><a href="gallery.php">Gallery</a></li>
             <li><a href="about.php">About</a></li>
-
-            <li><a href="achievements.php">Achievements</a></li>
-            <li><a href="contact.php">Contact</a></li>
+ <li><a href="contact.php">Contact</a></li>
           </ul>
 
           <a href="register.php" class="btn-book btn btn-secondary btn-sm menu-absolute">Enroll
@@ -207,7 +205,7 @@
         </div>
         <div class="col-lg-7" data-aos="fade-up" data-aos-delay="0">
           <figure class="img-wrap-4">
-            <img src="../UI/images/HERO_IMAGES/20220814_085942.jpg" alt="Image" class="img-fluid">
+            <img src="../UI/images/school_gallary/DeshSchool.jpg" alt="Image" class="img-fluid">
             <div class="dotted"></div>
           </figure>
 

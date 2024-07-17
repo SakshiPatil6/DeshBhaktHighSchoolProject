@@ -66,8 +66,9 @@ if (!empty($message)) {
         <nav class="navbar">
             <a href="admin_gallery.php">Add Gallery</a>
             <a href="admin_news.php">Add News</a>
-            <a href="admin_achievements.php">Add Achievements</a>
+           
             <a href="admin_contact.php">Add Contacts</a>
+            <a href="admin_staff.php">Add Staff</a>
             <a href="admin_feedback.php">Feedback</a>
             <a href="../UI/index.php">Logout</a>
         </nav>
@@ -81,13 +82,14 @@ if (!empty($message)) {
             <input type="text" name="teacherName" placeholder="Enter teacher's name" class="box" required>
             <input type="text" name="teacherPosition" placeholder="Enter teacher's position" class="box" required>
             <input name="teacherBio" placeholder="Enter teacher's qualification" class="box" required></input>
-            
-            <label for="teaching_staff">Teaching Staff</label>
-            <input type="radio" id="teaching_staff" name="teacherType" value="Teaching" required>
-            
-            <label for="non_teaching_staff">Non-Teaching Staff</label>
-            <input type="radio" id="non_teaching_staff" name="teacherType" value="Non-Teaching" required>
+            <br></br>
+            <label for="teaching_staff" class="box">Teaching Staff
+            <input type="radio" id="teaching_staff" name="teacherType" value="Teaching"  required></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="non_teaching_staff" class="box radio2">Non-Teaching Staff
+            <input type="radio" id="non_teaching_staff" name="teacherType" value="Non-Teaching" required></label>
 
+            <br><br/>
             <input type="file" name="teacherImage" accept="image/png,image/jpg,image/jpeg" class="box" required>
             <input type="submit" value="Add Teacher" name="add_teacher" class="btn">
         </form>
